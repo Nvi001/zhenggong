@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>政工应用小平台</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="page-layout">
+    <header>
+        <div class="navbar-fixed">
+            <nav id="mainNav">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="left brand-logo">
+                        <div class="logo">
+                            <div class="pageTitle_cn">常熟公安</div>
+                            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                        </div>
+                    </a>
+                    <ul class="left">
+                        <li><a href="index.html">首 页</a></li>
+                        <li><a href="jyda.html">警员档案</a></li>
+                        <li><a href="jyda.html">警队信息</a></li>
+                        <li><a href="jyda.html">职业规划</a></li>
+                        <li><a href="jyda.html">个人评价</a></li>
+                        <li><a href="jyda.html">动态警力配置</a></li>
+                        <li><a href="jyda.html">系统设置</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#"><i class="material-icons left">perm_identity</i>张三丰</a></li>
+                        <li class="active"><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menuBox">
+                <ul class="menuShow">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal active"><i class="material-icons">perm_identity</i>警员档案 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                                <li class=""><a href="#">职业规划</a></li>
+                                <li class=""><a href="#">评价记录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header   waves-effect waves-teal"><i class="material-icons">group_work</i>警队信息 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">警员查询</a></li>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">recent_actors</i>职业规划 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写规划</a></li>
+                                <li class=""><a href="#">规划统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment_ind</i>个人评价 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="pingjia_main.html">新建调查</a></li>
+                                <li class=""><a href="pingjia_my.html">我的问卷</a></li>
+                                <li class=""><a href="pingjia_list.html">模版管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings_input_composite</i>动态警力配置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">单位情况</a></li>
+                                <li class=""><a href="#">算法比率</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings</i>系统设置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">用户权限</a></li>
+                                <li class=""><a href="#">数据字典</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <nav class="catNav z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                        <a href="jyda.html" class="breadcrumb">个人评价</a>
+                        <a href="#!" class="breadcrumb">模板管理</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="jycxSearchBox">
+            <ul id="nav-mobile">
+                <li class="search">
+                    <div class="search-wrapper card">
+                        <input placeholder="模板搜索" id="search">
+                        <i class="material-icons">search</i>
+                        <div class="search-results"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container guihuaBox pinjia_itemBox">
+            <div class="row">
+                <div class="col s3">
+                    <div class="guihuaItem pinjia_item">
+                        <a href="pinjia.html">
+                            <div class="guihuaItem-content">
+                                <i class="material-icons medium aniSet">library_add</i>
+                            </div>
+                            <div class="guihuaItem-date">
+                                新建调查问卷模版
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col s3">
+                    <div class="guihuaItem pinjia_item">
+                        <div class="guihuaItem-content">
+                            <span class="guihuaItem-title">关于岗位变动的调查</span>
+                            <p>2016年12月20日</p>
+                            <div class="pinjia_itemLink">
+                                <a href="#modalPreview" class="tooltipped" data-position="top" data-delay="50" data-tooltip="预览模版"><i class="material-icons">remove_red_eye</i></a>
+                                <a href="pinjia.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="以此模版新建问卷"><i class="material-icons aniSet">open_in_new</i></a>
+                                <a href="pinjia.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="编辑问卷模板"><i class="material-icons aniSet">edit</i></a>
+                                <a href="#" class="tooltipped deleteTemplate" data-position="top" data-delay="50" data-tooltip="删除模板"><i class="material-icons aniSet">delete</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s3">
+                    <div class="guihuaItem pinjia_item">
+                        <div class="guihuaItem-content">
+                            <span class="guihuaItem-title">关于岗位变动的调查</span>
+                            <p>2016年12月20日</p>
+                            <div class="pinjia_itemLink">
+                                <a href="#modalPreview" class="tooltipped" data-position="top" data-delay="50" data-tooltip="预览模版"><i class="material-icons">remove_red_eye</i></a>
+                                <a href="pinjia.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="以此模版新建问卷"><i class="material-icons aniSet">open_in_new</i></a>
+                                <a href="pinjia.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="编辑问卷模板"><i class="material-icons aniSet">edit</i></a>
+                                <a href="#" class="tooltipped deleteTemplate" data-position="top" data-delay="50" data-tooltip="删除模板"><i class="material-icons aniSet">delete</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s3">
+                    <div class="guihuaItem pinjia_item">
+                        <div class="guihuaItem-content">
+                            <span class="guihuaItem-title">关于岗位变动的调查</span>
+                            <p>2016年12月20日</p>
+                            <div class="pinjia_itemLink">
+                                <a href="#modalPreview" class="tooltipped" data-position="top" data-delay="50" data-tooltip="预览模版"><i class="material-icons">remove_red_eye</i></a>
+                                <a href="pinjia.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="以此模版新建问卷"><i class="material-icons aniSet">open_in_new</i></a>
+                                <a href="pinjia.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="编辑问卷模板"><i class="material-icons aniSet">edit</i></a>
+                                <a href="#" class="tooltipped deleteTemplate" data-position="top" data-delay="50" data-tooltip="删除模板"><i class="material-icons aniSet">delete</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#!">1</a></li>
+                        <li class="waves-effect"><a href="#!">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container footTop white-text">平台说明：</div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 常熟市公安局
+                <a class="grey-text text-lighten-4 right" href="#">政工应用小平台</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--模态框显示调查预览-->
+<div id="modalPreview" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        <div class="container diaochaBox userShowBox">
+            <div class="row">
+                <div class="col s10 s12">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="paperTitle">调查标题</div>
+                        </div>
+                        <div class="col s12">
+                            <div class="paperInfo">希望您能抽出几分钟时间，将您的感受和建议告诉我们，我们非常重视每位用户的宝贵意见，期待您的参与！现在我们就马上开始吧！</div>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <ul class="testList">
+                            <li class="moldSelBody">
+                                <div class="row">
+                                    <div class="col noShow">1.</div>
+                                    <div class="col s11">
+                                        <div class="moldTitle">
+                                            <div class="moldTitleTxt">问卷调查题目1</div>
+                                        </div>
+                                        <div class="moldDesc">
+                                            <ul>
+                                                <li class="row">
+                                                    <div class="col s12 moldRadio">
+                                                        <input name="group1" type="radio" id="test1" />
+                                                        <label for="test1" class="">调查选项1</label>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col s12 moldRadio">
+                                                        <input name="group1" type="radio" id="test2" />
+                                                        <label for="test2" class="">调查选项2</label>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col s12 moldRadio">
+                                                        <input name="group1" type="radio" id="test3" />
+                                                        <label for="test3" class="">调查选项3</label>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col s12 moldRadio">
+                                                        <input name="group1" type="radio" id="test4" />
+                                                        <label for="test4" class="">调查选项4</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="moldSelBody">
+                                <div class="row">
+                                    <div class="col noShow">2.</div>
+                                    <div class="col s11">
+                                        <div class="moldTitle">
+                                            <div class="moldTitleTxt">问卷调查题目2</div>
+                                        </div>
+                                        <div class="moldDesc">
+                                            <ul>
+                                                <li class="row">
+                                                    <div class="col s12 moldRadio">
+                                                        <input name="group2" type="radio" id="test21" />
+                                                        <label for="test21" class="">调查选项1</label>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col s12 moldRadio">
+                                                        <input name="group2" type="radio" id="test22" />
+                                                        <label for="test22" class="">调查选项2</label>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col s12 moldRadio">
+                                                        <input name="group2" type="radio" id="test23" />
+                                                        <label for="test23" class="">调查选项3</label>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col s12 moldRadio">
+                                                        <input name="group2" type="radio" id="test24" />
+                                                        <label for="test24" class="">调查选项4</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="moldSelBody moldTtextareaBody">
+                                <div class="row">
+                                    <div class="col noShow">3.</div>
+                                    <div class="col s11">
+                                        <div class="moldTitle">
+                                            <div class="moldTitleTxt">问卷调查题目3问答题</div>
+                                        </div>
+                                        <div class="moldDesc">
+                                            <textarea placeholder="回答" id="textarea1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/zgJS.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+        $('.deleteTemplate').click(function(){
+            $(this).parents('.col.s3').slideUp(function(){
+                $(this).remove();
+            });
+            $('.material-tooltip').css('visibility','hidden').css('opacity','0');
+        });
+    });
+</script>
+
+</body>
+</html>

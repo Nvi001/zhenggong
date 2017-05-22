@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>政工应用小平台</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="page-layout">
+    <header>
+        <div class="navbar-fixed">
+            <nav id="mainNav">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="left brand-logo">
+                        <div class="logo">
+                            <div class="pageTitle_cn">常熟公安</div>
+                            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                        </div>
+                    </a>
+                    <ul class="left">
+                        <li><a href="index.html">首 页</a></li>
+                        <li><a href="jyda.html">警员档案</a></li>
+                        <li><a href="jyda.html">警队信息</a></li>
+                        <li><a href="jyda.html">职业规划</a></li>
+                        <li><a href="jyda.html">个人评价</a></li>
+                        <li><a href="jyda.html">动态警力配置</a></li>
+                        <li><a href="jyda.html">系统设置</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><i class="material-icons">perm_identity</i>张三丰</li>
+                        <li class="active"><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menuBox">
+                <ul class="menuShow">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal active"><i class="material-icons">perm_identity</i>警员档案 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                                <li class=""><a href="#">职业规划</a></li>
+                                <li class=""><a href="#">评价记录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header   waves-effect waves-teal"><i class="material-icons">group_work</i>警队信息 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">警员查询</a></li>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">recent_actors</i>职业规划 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写规划</a></li>
+                                <li class=""><a href="#">规划统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment_ind</i>个人评价 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写评价</a></li>
+                                <li class=""><a href="#">评价结果</a></li>
+                                <li class=""><a href="#">模版管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings_input_composite</i>动态警力配置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">单位情况</a></li>
+                                <li class=""><a href="#">算法比率</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings</i>系统设置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">用户权限</a></li>
+                                <li class=""><a href="#">数据字典</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <nav class="catNav z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                        <a href="guihua.html" class="breadcrumb">职业规划</a>
+                        <a href="#!" class="breadcrumb">填写规划</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container guihuaBox guihuaBoxForm jdxxBox">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <ul class="collection z-depth-1">
+                        <li class="collection-item guihuaBoxForm_title">
+                            <i class="material-icons red-text">group_work</i><h5>警队信息</h5>
+                        </li>
+                        <li class="collection-item tableOutBox">
+                            <table class="striped jdxxTable">
+                                <thead>
+                                <tr>
+                                    <th>民警配置</th>
+                                    <th>领导</th>
+                                    <th>社区</th>
+                                    <th>办案</th>
+                                    <th>内勤</th>
+                                    <th>交通</th>
+                                    <th>外派</th>
+                                    <th>合计</th>
+                                    <th>参加值班</th>
+                                    <th>参加主班</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>数量</td>
+                                    <td>6</td>
+                                    <td>15</td>
+                                    <td>9</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td rowspan="2">33</td>
+                                    <td>32</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td>占比</td>
+                                    <td>18%</td>
+                                    <td>45%</td>
+                                    <td>27%</td>
+                                    <td>6%</td>
+                                    <td>0%</td>
+                                    <td>3%</td>
+                                    <td>97%</td>
+                                    <td>39%</td>
+                                </tr>
+                                <tr>
+                                    <td>临时减员/常态缺额</td>
+                                    <td>&nbsp;</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>3</td>
+                                    <td>&nbsp;</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>年龄偏大</td>
+                                    <td>9</td>
+                                    <td>身体欠佳</td>
+                                    <td>2</td>
+                                    <td>女性</td>
+                                    <td>6</td>
+                                    <td>辅警合计</td>
+                                    <td>146</td>
+                                    <td>辅警缺额</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                </tbody>
+
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="collection z-depth-1 tabViewBox">
+                        <div class="col s12 collection-item">
+                            <ul class="tabs">
+                                <li class="tab"><a class="active" href="#tabBox1"><i class="material-icons">school</i>警队Tab1</a></li>
+                                <li class="tab"><a href="#tabBox2"><i class="material-icons">supervisor_account</i>警队Tab2</a></li>
+                                <li class="tab"><a href="#tabBox3"><i class="material-icons">location_on</i>警队Tab3</a></li>
+                                <li class="tab"><a href="#tabBox4"><i class="material-icons">games</i>警队Tab4</a></li>
+                                <li class="tab"><a href="#tabBox5"><i class="material-icons">star</i>警队Tab5</a></li>
+                                <li class="tab"><a href="#modal1"><i class="material-icons">folder_shared</i>模态框1</a></li>
+                                <li class="tab"><a href="#modal2"><i class="material-icons">book</i>模态框2</a></li>
+                                <li class="tab"><a href="#modal3"><i class="material-icons">local_play</i>模态框3</a></li>
+                                <li class="tab"><a href="#modal4"><i class="material-icons">info</i>模态框4</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s12 collection-item">
+                            <div id="tabBox1" class="col s12 tabViewDetail">
+                                <table class="bordered highlight">
+                                    <thead>
+                                    <tr>
+                                        <th data-field="id">序号</th>
+                                        <th data-field="date">时间</th>
+                                        <th data-field="school">学校</th>
+                                        <th data-field="major">专业</th>
+                                        <th data-field="education">学历</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2003.19-2007.06</td>
+                                        <td>南京理工大学</td>
+                                        <td>计算机</td>
+                                        <td>本科</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2008.09-2010.06</td>
+                                        <td>南京大学</td>
+                                        <td>计算机</td>
+                                        <td>硕士</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tabBox2" class="col s12 tabViewDetail">
+                                <table class="bordered highlight">
+                                    <thead>
+                                    <tr>
+                                        <th data-field="id">序号</th>
+                                        <th data-field="name">姓名</th>
+                                        <th data-field="age">年龄</th>
+                                        <th data-field="sex">性别</th>
+                                        <th data-field="number">身份证号</th>
+                                        <th data-field="relationship">关系</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>某某某</td>
+                                        <td>34</td>
+                                        <td>女</td>
+                                        <td>320581XXXXXXXXXXXX</td>
+                                        <td>妻子</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>某某某</td>
+                                        <td>7</td>
+                                        <td>男</td>
+                                        <td>320581XXXXXXXXXXXX</td>
+                                        <td>子女</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tabBox3" class="col s12 tabViewDetail">
+                                <table class="bordered highlight">
+                                    <thead>
+                                    <tr>
+                                        <th data-field="id">序号</th>
+                                        <th data-field="address">地址</th>
+                                        <th data-field="upload">填报时间</th>
+                                        <th data-field="remark">备注</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>某某社区XX幢XXX室</td>
+                                        <td>2016年6月</td>
+                                        <td><div class="chip red white-text">现居地</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>某某社区XX幢XXX室</td>
+                                        <td>2017年2月</td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tabBox4" class="col s12 tabViewDetail">
+                                <div class="chips">
+                                    <div class="chip">指纹分析</div>
+                                    <div class="chip">枪法准</div>
+                                    <div class="chip">情报工作</div>
+                                </div>
+                            </div>
+                            <div id="tabBox5" class="col s12 tabViewDetail">
+                                <div class="chips">
+                                    <div class="chip">篮球</div>
+                                    <div class="chip">唱歌</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container footTop white-text">平台说明：</div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 常熟市公安局
+                <a class="grey-text text-lighten-4 right" href="#">政工应用小平台</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--警队各类信息模态框显示：-->
+<div id="modal1" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div>
+                    <div id="gzgw" class="section scrollspy">
+                        <div class="categoryTitle grey lighten-4">警队信息1</div>
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        警队信息2
+    </div>
+</div>
+<div id="modal3" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        警队信息3
+    </div>
+</div>
+<div id="modal4" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        警队信息4
+    </div>
+</div>
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/zgJS.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+    });
+</script>
+
+</body>
+</html>

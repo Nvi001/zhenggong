@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>政工应用小平台</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="page-layout">
+    <header>
+        <div class="navbar-fixed">
+            <nav id="mainNav">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="left brand-logo">
+                        <div class="logo">
+                            <div class="pageTitle_cn">常熟公安</div>
+                            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                        </div>
+                    </a>
+                    <ul class="left">
+                        <li><a href="index.html">首 页</a></li>
+                        <li><a href="jyda.html">警员档案</a></li>
+                        <li><a href="jyda.html">警队信息</a></li>
+                        <li><a href="jyda.html">职业规划</a></li>
+                        <li><a href="jyda.html">个人评价</a></li>
+                        <li><a href="jyda.html">动态警力配置</a></li>
+                        <li><a href="jyda.html">系统设置</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#"><i class="material-icons left">perm_identity</i>张三丰</a></li>
+                        <li class="active"><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menuBox">
+                <ul class="menuShow">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal active"><i class="material-icons">perm_identity</i>警员档案 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                                <li class=""><a href="#">职业规划</a></li>
+                                <li class=""><a href="#">评价记录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header   waves-effect waves-teal"><i class="material-icons">group_work</i>警队信息 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">警员查询</a></li>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">recent_actors</i>职业规划 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写规划</a></li>
+                                <li class=""><a href="#">规划统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment_ind</i>个人评价 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="pingjia_main.html">新建调查</a></li>
+                                <li class=""><a href="pingjia_my.html">我的问卷</a></li>
+                                <li class=""><a href="pingjia_list.html">模版管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings_input_composite</i>动态警力配置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">单位情况</a></li>
+                                <li class=""><a href="#">算法比率</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings</i>系统设置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">用户权限</a></li>
+                                <li class=""><a href="#">数据字典</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <nav class="catNav z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                        <a href="jyda.html" class="breadcrumb">个人评价</a>
+                        <a href="#!" class="breadcrumb">模板管理</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container diaochaBox">
+            <div class="row">
+                <div class="col s2">
+                    <ul class="addCat">
+                        <li><a class="addSel btn waves-effect waves-block z-depth-0 grey lighten-2" href="javascript:void(0)"><i class="material-icons left">radio_button_checked</i>添加选择题</a></li>
+                        <li><a class="addAnswer btn waves-effect waves-block z-depth-0 grey lighten-2" href="javascript:void(0)"><i class="material-icons left">textsms</i>添加问答题</a></li>
+                    </ul>
+                </div>
+                <div class="col s10">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="paperTitle clickEdit">调查标题</div>
+                        </div>
+                        <div class="col s12">
+                            <div class="paperInfo clickEdit">希望您能抽出几分钟时间，将您的感受和建议告诉我们，我们非常重视每位用户的宝贵意见，期待您的参与！现在我们就马上开始吧！</div>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <ul class="testList">
+
+                        </ul>
+                        <div class="submitPaper">
+                            <button class="btn btn-flat btn-large waves-effect waves-light" type="submit" name="action"> 提交调查卷
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container footTop white-text">平台说明：</div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 常熟市公安局
+                <a class="grey-text text-lighten-4 right" href="#">政工应用小平台</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<ul class="moldSel hide">
+    <li class="moldSelBody active">
+        <div class="moldEditBar aniSet">
+            <ul>
+                <li><a class="btEditNow" href="#!"><i class="small material-icons aniSet">edit</i></a></li>
+                <li><a class="btDelNow" href="#!"><i class="small material-icons aniSet">delete</i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col noShow"></div>
+            <div class="col s11">
+                <div class="moldTitle">
+                    <input placeholder="请输入调查题目" type="text"/>
+                    <div class="moldTitleTxt"></div>
+                </div>
+                <div class="moldDesc">
+                    <ul>
+                        <li class="row">
+                            <div class="col s10 moldRadio hide">
+                                <input name="group1" type="radio" id="test1" disabled="disabled" />
+                                <label for="test1" class=""></label>
+                            </div>
+                            <div class="col s10 moldRadioInput">
+                                <input placeholder="请输入选项" type="text"/>
+                            </div>
+                            <div class="col s2"><a class="delThisLine" href="#!"><i class="small material-icons aniSet">close</i></a></div>
+                        </li>
+                        <li class="row">
+                            <div class="col s10 moldRadio hide">
+                                <input name="group1" type="radio" id="test2" disabled="disabled" />
+                                <label for="test2" class=""></label>
+                            </div>
+                            <div class="col s10 moldRadioInput">
+                                <input placeholder="请输入选项" type="text"/>
+                            </div>
+                            <div class="col s2"><a class="delThisLine" href="#!"><i class="small material-icons aniSet">close</i></a></div>
+                        </li>
+                        <li class="row addLineBox">
+                            <div class="col s10">
+                                <a href="javascript:void(0)" class="addLine">添加选项</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s8 moldBtnBox">
+                <a href="javascript:void(0)" class="btn waves-effect waves-light btn_confirm z-depth-0">确定</a>
+                <a href="javascript:void(0)" class="btn waves-effect waves-light grey btn_cancel z-depth-0">取消</a>
+            </div>
+        </div>
+    </li>
+    <li class="moldSelBody moldTtextareaBody active">
+        <div class="moldEditBar aniSet">
+            <ul>
+                <li><a class="btEditNow" href="#!"><i class="small material-icons aniSet">edit</i></a></li>
+                <li><a class="btDelNow" href="#!"><i class="small material-icons aniSet">delete</i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col noShow"></div>
+            <div class="col s11">
+                <div class="moldTitle">
+                    <input placeholder="请输入调查题目" type="text"/>
+                    <div class="moldTitleTxt"></div>
+                </div>
+                <div class="moldDesc">
+                    <textarea placeholder="回答" disabled id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1"></label>
+                </div>
+            </div>
+            <div class="col s8 moldBtnBox">
+                <a href="javascript:void(0)" class="btn waves-effect waves-light btn_confirm z-depth-0">确定</a>
+                <a href="javascript:void(0)" class="btn waves-effect waves-light grey btn_cancel z-depth-0">取消</a>
+            </div>
+        </div>
+    </li>
+</ul>
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/zgJS.js"></script>
+<script>
+    $(document).ready(function(){
+        var iDom = 1;
+            $(".clickEdit").click(function () {
+                var oldTxt = $(this).html();
+                var thisDox = $(this);
+                if(thisDox.children("input").length==0) {
+                    thisDox.html("");
+                    var moldWidth = thisDox.width;
+                    var moldHeight = thisDox.height;
+                    var moldBox = $("<input>").addClass("appendDom" + iDom).attr("type", "text");
+                    thisDox.append(moldBox);
+                    moldBox.width = moldWidth;
+                    moldBox.height = moldHeight;
+                    moldBox.val(oldTxt).focus();
+                    iDom++;
+                    moldBox.blur(function () {
+                        oldTxt = moldBox.val();
+                        moldBox.remove();
+                        thisDox.html(oldTxt).show();
+                    });
+                }
+            });
+        $(function(){
+            $(document).on('click',".addLine",function(){
+                var addLine = $(".moldSel .moldDesc li:first-child");
+                var appendTaget = $(this).parent().parent();
+                addLine.clone(true).insertBefore(appendTaget).hide().slideDown();
+            });
+            $(document).on('click',".delThisLine",function(){
+                $(this).parent().parent().slideUp(function(){$(this).remove()});
+            });
+        });
+        $(function(){
+            var tempSelBody;
+            $(document).on('click',".btn_confirm",function(){
+                var thisRadio = $(this).parent().prev().find(".moldRadioInput>input");
+                var thisTitle = $(this).parent().prev().find(".moldTitle input").val();
+                var allInput = $(this).parents(".moldSelBody").find("input[type='text']");
+                allInput.each(function(){
+                    if($(this).val() == 0){
+                        $(this).removeClass("animated").removeClass("shake");
+                        $(this).addClass("nonData").addClass("animated").addClass("shake");
+                    }else{
+                        $(this).removeClass("nonData");
+                    }
+                });
+                setTimeout(function(){
+                    $(".animated").removeClass("animated").removeClass("shake");
+                },1000);
+                if($(".testList .nonData").length == 0){
+                    $(".testList .noShow").each(function(index){
+                        $(this).html(index+1+". ");
+                    });
+                    thisRadio.each(function(index){
+                        var lastText = $(this).val();
+                        $(this).parent().prev().find("input").attr("id","newRadio"+index);
+                        $(this).parent().prev().find("label").html(lastText).attr("for","newRadio"+index);
+                        $(this).parent().prev().removeClass("hide");
+                        $(this).parent().addClass("hide");
+                        $(this).parent().next().addClass("hide");
+                    });
+                    $(this).parent().prev().find(".moldTitle input").addClass("hide");
+                    $(this).parent().prev().find(".moldTitleTxt").html(thisTitle).removeClass("hide");
+                    $(this).parent().addClass("hide");
+                    $(this).parent().prev().find(".addLineBox").addClass("hide");
+                    $(".moldSelBody.active").removeClass("active");
+                }
+            });
+            $(document).on('click',".btn_cancel",function(){
+                if($(this).parents(".editedSelBody").length > 0){
+                    $(this).parents(".moldSelBody").find("div.row").html(tempSelBody);
+                    $(this).parent().addClass("hide");
+                    $(".moldSelBody.active").removeClass("active");
+                }else{
+                    $(this).parents(".moldSelBody").slideUp(function(){
+                        $(this).remove();
+                    });
+                }
+            });
+            $(".btEditNow").click(function(){
+                if($(".testList .moldSelBody.active").length > 0){
+                    $(".testList .moldSelBody.active").addClass("animated").addClass("shake");
+                    setTimeout(function(){
+                        $(".testList .moldSelBody.active").removeClass("animated").removeClass("shake");
+                    },1000);
+                }else{
+                    if($(this).parents(".editedSelBody").length == 0){
+                        $(this).parents(".moldSelBody").addClass("editedSelBody");
+                    }
+                    tempSelBody = $(this).parents(".moldSelBody").find("div.row").html();
+                    var thisRadio = $(this).parents(".moldSelBody").find(".moldRadio label");
+                    var thisTitle = $(this).parents(".moldSelBody").find(".moldTitle .moldTitleTxt").html();
+                    $(this).parents(".moldSelBody").find(".moldTitle input").removeClass("hide").val(thisTitle);
+                    $(this).parents(".moldSelBody").find(".moldTitle .moldTitleTxt").addClass("hide");
+                    $(this).parents(".moldSelBody").addClass("active");
+                    thisRadio.each(function(){
+                        var lastText = $(this).html();
+                        $(this).parent().next().find("input").val(lastText);
+                        $(this).parent().next().removeClass("hide");
+                        $(this).parent().addClass("hide");
+                        $(this).parent().next().next().removeClass("hide");
+                    });
+                    $(this).parents(".moldSelBody").find(".moldBtnBox").removeClass("hide");
+                    $(this).parents(".moldSelBody").find(".addLineBox").removeClass("hide");
+                }
+
+            });
+            $(".btDelNow").click(function(){
+                $(this).parents(".moldSelBody").slideUp(function(){
+                    $(this).remove();
+                });
+            });
+        /*添加选择题*/
+            $(".addSel").click(function(){
+                if($(".testList .moldSelBody.active").length > 0){
+                    $(".testList .moldSelBody.active").addClass("animated").addClass("shake");
+                    setTimeout(function(){
+                        $(".testList .moldSelBody.active").removeClass("animated").removeClass("shake");
+                    },1000);
+                }else{
+                    var moldAddTemp = $(".moldSel .moldSelBody:first-child");
+                    moldAddTemp.clone(true).appendTo(".testList").addClass("active").hide();
+                    $(".testList .moldSelBody.active").slideDown();
+
+                }
+            });
+            $(".addAnswer").click(function(){
+                if($(".testList .moldSelBody.active").length > 0){
+                    $(".testList .moldSelBody.active").addClass("animated").addClass("shake");
+                    setTimeout(function(){
+                        $(".testList .moldSelBody.active").removeClass("animated").removeClass("shake");
+                    },1000);
+                }else{
+                    var moldAddTemp = $(".moldSel .moldTtextareaBody");
+                    moldAddTemp.clone(true).appendTo(".testList").addClass("moldSelBody").addClass("active").hide();
+                    $(".testList .moldTtextareaBody.moldSelBody.active").slideDown();
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

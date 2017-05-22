@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>政工应用小平台</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="page-layout">
+    <header>
+        <div class="navbar-fixed">
+            <nav id="mainNav">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="left brand-logo">
+                        <div class="logo">
+                            <div class="pageTitle_cn">常熟公安</div>
+                            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                        </div>
+                    </a>
+                    <ul class="left">
+                        <li><a href="jyda.html">警员档案</a></li>
+                        <li><a href="jyda.html">警队信息</a></li>
+                        <li><a href="jyda.html">职业规划</a></li>
+                        <li><a href="jyda.html">个人评价</a></li>
+                        <li><a href="jyda.html">动态警力配置</a></li>
+                        <li><a href="jyda.html">系统设置</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><i class="material-icons">perm_identity</i>张三丰</li>
+                        <li class="active"><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menuBox">
+                <ul class="menuShow">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal active"><i class="material-icons">perm_identity</i>警员档案 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                                <li class=""><a href="#">职业规划</a></li>
+                                <li class=""><a href="#">评价记录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header   waves-effect waves-teal"><i class="material-icons">group_work</i>警队信息 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">警员查询</a></li>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">recent_actors</i>职业规划 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写规划</a></li>
+                                <li class=""><a href="#">规划统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment_ind</i>个人评价 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写评价</a></li>
+                                <li class=""><a href="#">评价结果</a></li>
+                                <li class=""><a href="#">模版管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings_input_composite</i>动态警力配置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">单位情况</a></li>
+                                <li class=""><a href="#">算法比率</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings</i>系统设置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">用户权限</a></li>
+                                <li class=""><a href="#">数据字典</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <nav class="catNav z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                        <a href="#!" class="breadcrumb">一级分类</a>
+                        <a href="#!" class="breadcrumb">二级分类</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <div class="row tableFilter">
+                                <form>
+                                    <div class="input-field col s2">
+                                        <select>
+                                            <option value="" 下拉列表>下拉列表</option>
+                                            <option value="1">选项 1</option>
+                                            <option value="2">选项 2</option>
+                                            <option value="3">选项 3</option>
+                                        </select>
+                                        <label></label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">姓名</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input id="input2" type="text" class="validate">
+                                        <label for="input2">职位</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input id="input3" type="text" class="validate">
+                                        <label for="input3">警号</label>
+                                    </div>
+                                    <div class="input-field col s1">
+                                        <button class="btn waves-effect waves-light z-depth-0" type="submit" name="action">搜索
+                                            <!--<i class="material-icons right">search</i>-->
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="collection-item tableOutBox">
+                            <table class="striped">
+                                <thead>
+                                <tr>
+                                    <th data-field="id" class="center-align">序号</th>
+                                    <th data-field="date">时间</th>
+                                    <th data-field="school">学校</th>
+                                    <th data-field="major">专业</th>
+                                    <th data-field="education">学历</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td class="center-align">1</td>
+                                    <td class="editAble">2003.19-2007.06</td>
+                                    <td class="editAble">南京理工大学</td>
+                                    <td class="editAble">计算机</td>
+                                    <td class="editAble">本科</td>
+                                </tr>
+                                <tr>
+                                    <td class="center-align">2</td>
+                                    <td class="editAble">2008.09-2010.06</td>
+                                    <td class="editAble">南京大学</td>
+                                    <td class="editAble">计算机</td>
+                                    <td class="editAble">硕士</td>
+                                </tr>
+                                <tr>
+                                    <td class="center-align">3</td>
+                                    <td class="editAble">2003.19-2007.06</td>
+                                    <td class="editAble">南京理工大学</td>
+                                    <td class="editAble">计算机</td>
+                                    <td class="editAble">本科</td>
+                                </tr>
+                                <tr>
+                                    <td class="center-align">4</td>
+                                    <td class="editAble">2008.09-2010.06</td>
+                                    <td class="editAble">南京大学</td>
+                                    <td class="editAble">计算机</td>
+                                    <td class="editAble">硕士</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="dateSelBox" type="date" class="datepicker">
+                            <label for="dateSelBox">日期选择器</label>
+                        </div>
+                        <div class="input-field col s6">
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">文本域</label>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="占位提示" id="first_name" type="text" class="validate">
+                            <label for="first_name">姓名</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">爱好</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input disabled value="我不能输入" id="disabled" type="text" class="validate">
+                            <label for="disabled">禁用</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">密码</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">邮件</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            这是一行输入文本:
+                            <div class="input-field inline">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="错误" data-success="right">邮件</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="right btn waves-effect waves-light" type="submit" name="action">提交
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">姓名</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate">
+                            <label for="icon_telephone">电话</label>
+                        </div>
+                    </div>
+                    <button class="center-align btn waves-effect waves-light" type="submit" name="action">提交
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+            <div class="row">
+
+                <div class="input-field col s12">
+                    <select>
+                        <option value="">下拉列表11111</option>
+                        <option value="1">选项 1</option>
+                        <option value="2" selected="selected">选项 2</option>
+                        <option value="3">选项 3</option>
+                    </select>
+                    <label>下拉列表</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <select multiple>
+                        <option value="" 多选下拉列表>多选下拉列表</option>
+                        <option value="1">选项 1</option>
+                        <option value="2">选项 2</option>
+                        <option value="3">选项 3</option>
+                    </select>
+                    <label>多选下拉列表</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <select>
+                        <optgroup label="team 1">
+                            <option value="1">选项 1</option>
+                            <option value="2">选项 2</option>
+                        </optgroup>
+                        <optgroup label="team 2">
+                            <option value="3">选项 3</option>
+                            <option value="4">选项 4</option>
+                        </optgroup>
+                    </select>
+                    <label>选项组</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <form class="row" action="#">
+                        <div class="col s1">
+                            <input name="group1" type="radio" id="test1" />
+                            <label for="test1">红色</label>
+                        </div>
+                        <div class="col s1">
+                            <input name="group1" type="radio" id="test2" />
+                            <label for="test2">黄色</label>
+                        </div>
+                        <div class="col s1">
+                            <input name="group1" type="radio" id="test3"  />
+                            <label for="test3">绿色</label>
+                        </div>
+                        <div class="col s1">
+                            <input name="group1" type="radio" id="test4" disabled="disabled" />
+                            <label for="test4">棕色</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <form class="row" action="#">
+                        <div class="col s1">
+                            <input type="checkbox" id="test5" />
+                            <label for="test5">红色</label>
+                        </div>
+                        <div class="col s1">
+                            <input type="checkbox" id="test6" checked="checked" />
+                            <label for="test6">黄色</label>
+                        </div>
+                        <div class="col s1">
+                            <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+                            <label for="test7">绿色</label>
+                        </div>
+                        <div class="col s1">
+                            <input type="checkbox" id="test8" disabled="disabled" />
+                            <label for="test8">棕色</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Switch -->
+                <div class="switch col s4">
+                    <label>
+                        关
+                        <input checked type="checkbox">
+                        <span class="lever"></span>
+                        开
+                    </label>
+                </div>
+                <div class="switch col s4">
+                    <label>
+                        关
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        开
+                    </label>
+                </div>
+
+                <!-- Disabled Switch -->
+                <div class="switch col s4">
+                    <label>
+                        关
+                        <input disabled type="checkbox">
+                        <span class="lever"></span>
+                        开
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <form action="#">
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>文件</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="container footTop"><p class="white-text">说明：</p></div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 常熟市公安局
+                <a class="grey-text text-lighten-4 right" href="#">政工应用小平台</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/zgJS.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>政工应用小平台</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="page-layout">
+    <header>
+        <div class="navbar-fixed">
+            <nav id="mainNav">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="left brand-logo">
+                        <div class="logo">
+                            <div class="pageTitle_cn">常熟公安</div>
+                            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                        </div>
+                    </a>
+                    <ul class="left">
+                        <li><a href="index.html">首 页</a></li>
+                        <li><a href="jyda.html">警员档案</a></li>
+                        <li><a href="jyda.html">警队信息</a></li>
+                        <li><a href="jyda.html">职业规划</a></li>
+                        <li><a href="jyda.html">个人评价</a></li>
+                        <li><a href="jyda.html">动态警力配置</a></li>
+                        <li><a href="jyda.html">系统设置</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#"><i class="material-icons left">perm_identity</i>张三丰</a></li>
+                        <li class="active"><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menuBox">
+                <ul class="menuShow">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal active"><i class="material-icons">perm_identity</i>警员档案 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                                <li class=""><a href="#">职业规划</a></li>
+                                <li class=""><a href="#">评价记录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header   waves-effect waves-teal"><i class="material-icons">group_work</i>警队信息 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">警员查询</a></li>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">recent_actors</i>职业规划 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写规划</a></li>
+                                <li class=""><a href="#">规划统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment_ind</i>个人评价 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="pingjia_main.html">新建调查</a></li>
+                                <li class=""><a href="pingjia_my.html">我的问卷</a></li>
+                                <li class=""><a href="pingjia_list.html">模版管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings_input_composite</i>动态警力配置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">单位情况</a></li>
+                                <li class=""><a href="#">算法比率</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings</i>系统设置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">用户权限</a></li>
+                                <li class=""><a href="#">数据字典</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <nav class="catNav z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                        <a href="jyda.html" class="breadcrumb">个人评价</a>
+                        <a href="#!" class="breadcrumb">模板选择</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="jycxSearchBox">
+            <ul id="nav-mobile">
+                <li class="search">
+                    <div class="search-wrapper card">
+                        <input placeholder="模板搜索" id="search">
+                        <i class="material-icons">search</i>
+                        <div class="search-results"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container pingjia_templateBox">
+            <div class="row">
+                <div class="col s3">
+                    <a href="pinjia.html" class="pjTemplate_item">
+                        <div class="pjTemplate_item-content aniSet">
+                            <span class="pjTemplate_item-title">关于岗位变动的调查关于岗位变动的调查关于岗位变动的调查</span>
+                            <p>创建：2016-12-20</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s3">
+                    <a href="pinjia.html" class="pjTemplate_item">
+                        <div class="pjTemplate_item-content aniSet">
+                            <span class="pjTemplate_item-title">关于岗位变动的调查关于岗位变动的调查关于岗位变动的调查</span>
+                            <p>创建：2016-12-20</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s3">
+                    <a href="pinjia.html" class="pjTemplate_item">
+                        <div class="pjTemplate_item-content aniSet">
+                            <span class="pjTemplate_item-title">关于岗位变动的调查关于岗位变动的调查关于岗位变动的调查</span>
+                            <p>创建：2016-12-20</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s3">
+                    <a href="pinjia.html" class="pjTemplate_item">
+                        <div class="pjTemplate_item-content aniSet">
+                            <span class="pjTemplate_item-title">关于岗位变动的调查关于岗位变动的调查关于岗位变动的调查</span>
+                            <p>创建：2016-12-20</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s3">
+                    <a href="pinjia.html" class="pjTemplate_item">
+                        <div class="pjTemplate_item-content aniSet">
+                            <span class="pjTemplate_item-title">关于岗位变动的调查关于岗位变动的调查关于岗位变动的调查</span>
+                            <p>创建：2016-12-20</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s3">
+                    <a href="pinjia.html" class="pjTemplate_item">
+                        <div class="pjTemplate_item-content aniSet">
+                            <span class="pjTemplate_item-title">关于岗位变动的调查关于岗位变动的调查关于岗位变动的调查</span>
+                            <p>创建：2016-12-20</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s3">
+                    <a href="pinjia.html" class="pjTemplate_item">
+                        <div class="pjTemplate_item-content aniSet">
+                            <span class="pjTemplate_item-title">关于岗位变动的调查关于岗位变动的调查关于岗位变动的调查</span>
+                            <p>创建：2016-12-20</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s3">
+                    <a href="pinjia.html" class="pjTemplate_item">
+                        <div class="pjTemplate_item-content aniSet">
+                            <span class="pjTemplate_item-title">关于岗位变动的调查关于岗位变动的调查关于岗位变动的调查</span>
+                            <p>创建：2016-12-20</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#!">1</a></li>
+                        <li class="waves-effect"><a href="#!">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container footTop white-text">平台说明：</div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 常熟市公安局
+                <a class="grey-text text-lighten-4 right" href="#">政工应用小平台</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/zgJS.js"></script>
+</body>
+</html>

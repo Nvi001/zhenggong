@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>政工应用小平台</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="page-layout">
+    <header>
+        <div class="navbar-fixed">
+            <nav id="mainNav">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="left brand-logo">
+                        <div class="logo">
+                            <div class="pageTitle_cn">常熟公安</div>
+                            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                        </div>
+                    </a>
+                    <ul class="left">
+                        <li><a href="index.html">首 页</a></li>
+                        <li><a href="jyda.html">警员档案</a></li>
+                        <li><a href="jyda.html">警队信息</a></li>
+                        <li><a href="jyda.html">职业规划</a></li>
+                        <li><a href="jyda.html">个人评价</a></li>
+                        <li><a href="jyda.html">动态警力配置</a></li>
+                        <li><a href="jyda.html">系统设置</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><i class="material-icons">perm_identity</i>张三丰</li>
+                        <li class="active"><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menuBox">
+                <ul class="menuShow">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal active"><i class="material-icons">perm_identity</i>警员档案 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                                <li class=""><a href="#">职业规划</a></li>
+                                <li class=""><a href="#">评价记录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header   waves-effect waves-teal"><i class="material-icons">group_work</i>警队信息 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">警员查询</a></li>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">recent_actors</i>职业规划 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写规划</a></li>
+                                <li class=""><a href="#">规划统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment_ind</i>个人评价 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写评价</a></li>
+                                <li class=""><a href="#">评价结果</a></li>
+                                <li class=""><a href="#">模版管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings_input_composite</i>动态警力配置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">单位情况</a></li>
+                                <li class=""><a href="#">算法比率</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings</i>系统设置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">用户权限</a></li>
+                                <li class=""><a href="#">数据字典</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <nav class="catNav z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                        <a href="guihua.html" class="breadcrumb">职业规划</a>
+                        <a href="#!" class="breadcrumb">填写规划</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container guihuaBox guihuaBoxForm">
+            <div class="row">
+                <div class="col s6">
+                    <ul class="collection z-depth-1">
+                        <li class="collection-item guihuaBoxForm_title">
+                            <i class="material-icons red-text">assignment</i><h5>第一志愿</h5>
+                        </li>
+                        <li class="collection-item">
+                            <form>
+                                <div class="row input-field">
+                                    <div class="col s2">
+                                        选择：
+                                    </div>
+                                    <div class="col s3">
+                                        <input name="group1" type="radio" id="test1" />
+                                        <label for="test1">继续留任</label>
+                                    </div>
+                                    <div class="col s3">
+                                        <input name="group1" type="radio" id="test2" />
+                                        <label for="test2">内部调整</label>
+                                    </div>
+                                    <div class="col s3">
+                                        <input name="group1" type="radio" id="test3"  />
+                                        <label for="test3">调离</label>
+                                    </div>
+                                </div>
+                                <div class="row input-field">
+                                    <div class="col s2">去向：</div>
+                                    <div class="col s5">
+                                        <select>
+                                            <option value="" 下拉列表>单位</option>
+                                            <option value="1">单位 1</option>
+                                            <option value="2">单位 2</option>
+                                            <option value="3">单位 3</option>
+                                        </select>
+                                        <label class="hide">单位</label>
+                                    </div>
+                                    <div class="col s5">
+                                        <select>
+                                            <option value="">岗位</option>
+                                            <option value="1">社区民警</option>
+                                            <option value="2">办案民警</option>
+                                            <option value="3">交通民警</option>
+                                        </select>
+                                        <label class="hide">岗位</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 input-field">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">说明（必填）</label>
+                                    </div>
+                                </div>
+                                <!--<button class="btn waves-effect waves-light" type="submit" name="action">提交-->
+                                    <!--<i class="material-icons right">send</i>-->
+                                <!--</button>-->
+
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s6">
+                    <ul class="collection z-depth-1">
+                        <li class="collection-item guihuaBoxForm_title">
+                            <i class="material-icons orange-text">assignment</i><h5>第二志愿</h5>
+                        </li>
+                        <li class="collection-item">
+                            <form>
+                                <div class="row input-field">
+                                    <div class="col s2">
+                                        选择：
+                                    </div>
+                                    <div class="col s3">
+                                        <input name="group21" type="radio" id="test21" />
+                                        <label for="test21">继续留任</label>
+                                    </div>
+                                    <div class="col s3">
+                                        <input name="group21" type="radio" id="test22" />
+                                        <label for="test22">内部调整</label>
+                                    </div>
+                                    <div class="col s3">
+                                        <input name="group21" type="radio" id="test23"  />
+                                        <label for="test23">调离</label>
+                                    </div>
+                                </div>
+                                <div class="row input-field">
+                                    <div class="col s2">去向：</div>
+                                    <div class="col s5">
+                                        <select>
+                                            <option value="" 下拉列表>单位</option>
+                                            <option value="1">单位 1</option>
+                                            <option value="2">单位 2</option>
+                                            <option value="3">单位 3</option>
+                                        </select>
+                                        <label class="hide">单位</label>
+                                    </div>
+                                    <div class="col s5">
+                                        <select>
+                                            <option value="">岗位</option>
+                                            <option value="1">社区民警</option>
+                                            <option value="2">办案民警</option>
+                                            <option value="3">交通民警</option>
+                                        </select>
+                                        <label class="hide">岗位</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 input-field">
+                                        <textarea id="textarea21" class="materialize-textarea"></textarea>
+                                        <label for="textarea21">说明（必填）</label>
+                                    </div>
+                                </div>
+                                <!--<button class="btn waves-effect waves-light" type="submit" name="action">提交-->
+                                    <!--<i class="material-icons right">send</i>-->
+                                <!--</button>-->
+
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12">
+                    <div class="guihuaBoxForm_bt">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">提交
+                            <i class="material-icons right">send</i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container footTop white-text">平台说明：</div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 常熟市公安局
+                <a class="grey-text text-lighten-4 right" href="#">政工应用小平台</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/zgJS.js"></script>
+
+</body>
+</html>

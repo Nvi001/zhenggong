@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>政工应用小平台</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="page-layout">
+    <header>
+        <div class="navbar-fixed">
+            <nav id="mainNav">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="left brand-logo">
+                        <div class="logo">
+                            <div class="pageTitle_cn">常熟公安</div>
+                            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                        </div>
+                    </a>
+                    <ul class="left">
+                        <li><a href="index.html">首 页</a></li>
+                        <li><a href="jyda.html">警员档案</a></li>
+                        <li><a href="jyda.html">警队信息</a></li>
+                        <li><a href="jyda.html">职业规划</a></li>
+                        <li><a href="jyda.html">个人评价</a></li>
+                        <li><a href="jyda.html">动态警力配置</a></li>
+                        <li><a href="jyda.html">系统设置</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#"><i class="material-icons left">perm_identity</i>张三丰</a></li>
+                        <li class="active"><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menuBox">
+                <ul class="menuShow">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal active"><i class="material-icons">perm_identity</i>警员档案 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                                <li class=""><a href="#">职业规划</a></li>
+                                <li class=""><a href="#">评价记录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header   waves-effect waves-teal"><i class="material-icons">group_work</i>警队信息 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">警员查询</a></li>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">recent_actors</i>职业规划 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写规划</a></li>
+                                <li class=""><a href="#">规划统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment_ind</i>个人评价 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="pingjia_main.html">新建调查</a></li>
+                                <li class=""><a href="pingjia_my.html">我的问卷</a></li>
+                                <li class=""><a href="pingjia_list.html">模版管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings_input_composite</i>动态警力配置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">单位情况</a></li>
+                                <li class=""><a href="#">算法比率</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings</i>系统设置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">用户权限</a></li>
+                                <li class=""><a href="#">数据字典</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <nav class="catNav z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                        <a href="pingjia_main.html" class="breadcrumb">个人评价</a>
+                        <a href="#" class="breadcrumb">新增问卷</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="pingjiaMainBox">
+            <div class="container guihuaBox guihuaBoxForm pingjiaMainStep1">
+                <div class="row">
+                    <div class="col s6">
+                        <div class="collection z-depth-1 pingjiaStep1Bt">
+                            <a href="#" class="upPingjia">评价上级</a>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="collection z-depth-1 pingjiaStep1Bt">
+                            <a href="#" class="downPingjia">评价下级</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container guihuaBox guihuaBoxForm pingjiaMainStep2">
+                <div class="row">
+                    <div class="col s6">
+                        <ul class="collection z-depth-1">
+                            <li class="collection-item guihuaBoxForm_title">
+                                <i class="material-icons red-text">border_color</i><h5>调查填写人</h5>
+                            </li>
+                            <li class="collection-item">
+                                <form>
+                                    <div class="row input-field">
+                                        <div class="col s4">
+                                            <select>
+                                                <option value="" 下拉列表>单位</option>
+                                                <option value="1">全部</option>
+                                                <option value="2">公安局</option>
+                                                <option value="3">派出所 1</option>
+                                                <option value="4">派出所 2</option>
+                                                <option value="5">派出所 3</option>
+                                            </select>
+                                            <label class="hide">单位</label>
+                                        </div>
+                                        <div class="col s4">
+                                            <select>
+                                                <option value="">部门</option>
+                                                <option value="1">所有部门</option>
+                                                <option value="2">部门 1</option>
+                                                <option value="3">部门 2</option>
+                                                <option value="4">部门 3</option>
+                                            </select>
+                                            <label class="hide">部门</label>
+                                        </div>
+                                        <div class="col s4">
+                                            <select>
+                                                <option value="">岗位</option>
+                                                <option value="0">所有岗位</option>
+                                                <option value="1">社区民警</option>
+                                                <option value="2">办案民警</option>
+                                                <option value="3">交通民警</option>
+                                            </select>
+                                            <label class="hide">岗位</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s8 input-field">
+                                            <select multiple>
+                                                <option value="" >全部</option>
+                                                <option value="1">刘某某</option>
+                                                <option value="2">张某某</option>
+                                                <option value="3">钱某某</option>
+                                            </select>
+                                            <label>人员选择</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s6">
+                        <ul class="collection z-depth-1">
+                            <li class="collection-item guihuaBoxForm_title">
+                                <i class="material-icons orange-text">my_location</i><h5>调查目标</h5>
+                            </li>
+                            <li class="collection-item">
+                                <form>
+                                    <div class="row input-field">
+                                        <div class="col s4">
+                                            <select>
+                                                <option value="" 下拉列表>单位</option>
+                                                <option value="1">全部</option>
+                                                <option value="2">公安局</option>
+                                                <option value="3">派出所 1</option>
+                                                <option value="4">派出所 2</option>
+                                                <option value="5">派出所 3</option>
+                                            </select>
+                                            <label class="hide">单位</label>
+                                        </div>
+                                        <div class="col s4">
+                                            <select>
+                                                <option value="">部门</option>
+                                                <option value="1">所有部门</option>
+                                                <option value="2">部门 1</option>
+                                                <option value="3">部门 2</option>
+                                                <option value="4">部门 3</option>
+                                            </select>
+                                            <label class="hide">部门</label>
+                                        </div>
+                                        <div class="col s4">
+                                            <select>
+                                                <option value="">岗位</option>
+                                                <option value="0">所有岗位</option>
+                                                <option value="1">社区民警</option>
+                                                <option value="2">办案民警</option>
+                                                <option value="3">交通民警</option>
+                                            </select>
+                                            <label class="hide">岗位</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s8 input-field">
+                                            <select multiple>
+                                                <option value="" >全部</option>
+                                                <option value="1">刘某某</option>
+                                                <option value="2">张某某</option>
+                                                <option value="3">钱某某</option>
+                                            </select>
+                                            <label>人员选择</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s6">
+                            <button class="btn grey waves-effect waves-light returnStep1 right">返回上一步　
+                                <i class="material-icons left">chevron_left</i>
+                            </button>
+                    </div>
+                    <div class="col s6">
+                            <button class="btn waves-effect waves-light left gotoStep3">创建调查问卷
+                                <i class="material-icons right">send</i>
+                            </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page_guide">
+            <div class="row">
+                <div class="col s4 type create_by_empty">
+                    <div class="inner">
+                        <div class="type_show"></div>
+                        <h2 class="title">创建空白评价问卷</h2>
+                        <h3 class="subtitle">从一份空白评价问卷开始创建</h3>
+                        <a class="btn waves-effect waves-light white light-blue-text text-darken-3" href="pinjia.html">开始</a>
+                    </div>
+                </div>
+                <div class="col s4 type create_by_template">
+                    <div class="inner">
+                        <div class="type_show"></div>
+                        <h2 class="title">选择评价问卷模板</h2>
+                        <h3 class="subtitle">使用已有的模板创建评价问卷</h3>
+                        <a class="btn waves-effect waves-light white light-blue-text text-darken-3" href="pingjia_template.html">开始</a>
+                    </div>
+                </div>
+                <div class="col s4 type create_by_import">
+                    <div class="inner">
+                        <div class="type_show"></div>
+                        <h2 class="title">文本评价问卷</h2>
+                        <h3 class="subtitle">生成自由编辑文本评价问卷</h3>
+                        <a class="btn waves-effect waves-light white light-blue-text text-darken-3" href="text_editor.html">开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 guihuaBoxForm_bt">
+                    <button class="btn grey waves-effect waves-light returnStep2">返回上一步　
+                        <i class="material-icons left">chevron_left</i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container footTop white-text">平台说明：</div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 常熟市公安局
+                <a class="grey-text text-lighten-4 right" href="#">政工应用小平台</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- 评价目标选择模态框 -->
+<div id="modalPeopleSle" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        <h4>人员选择</h4>
+        <!-- 高级搜索内容 -->
+    </div>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/zgJS.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".pingjiaMainStep1").hide();
+        $(".pingjiaMainStep2").hide();
+        $(".page_guide").hide();
+        setTimeout(function(){
+            $(".pingjiaMainStep1").slideDown();
+        },1000);
+        $(".pingjiaStep1Bt").click(function(){
+            $(this).parents(".pingjiaMainStep1").slideUp(function(){
+                $(".pingjiaMainStep2").slideDown();
+            });
+        });
+        $(".returnStep1").click(function(){
+            $(this).parents(".pingjiaMainStep2").slideUp(function(){
+                $(".pingjiaMainStep1").slideDown();
+            });
+        });
+        $(".gotoStep3").click(function(){
+            $(this).parents(".pingjiaMainBox").slideUp(function(){
+                $(".page_guide").slideDown();
+            });
+        });
+        $(".returnStep2").click(function(){
+            $(this).parents(".page_guide").slideUp(function(){
+                $(".pingjiaMainBox").slideDown();
+            });
+        });
+
+    });
+
+</script>
+</body>
+</html>

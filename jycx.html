@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>政工应用小平台</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="page-layout">
+    <header>
+        <div class="navbar-fixed">
+            <nav id="mainNav">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="left brand-logo">
+                        <div class="logo">
+                            <div class="pageTitle_cn">常熟公安</div>
+                            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                        </div>
+                    </a>
+                    <ul class="left">
+                        <li><a href="index.html">首 页</a></li>
+                        <li><a href="jyda.html">警员档案</a></li>
+                        <li><a href="jyda.html">警队信息</a></li>
+                        <li><a href="jyda.html">职业规划</a></li>
+                        <li><a href="jyda.html">个人评价</a></li>
+                        <li><a href="jyda.html">动态警力配置</a></li>
+                        <li><a href="jyda.html">系统设置</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#"><i class="material-icons left">perm_identity</i>张三丰</a></li>
+                        <li class="active"><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menuBox">
+                <ul class="menuShow">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal active"><i class="material-icons">perm_identity</i>警员档案 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                                <li class=""><a href="#">职业规划</a></li>
+                                <li class=""><a href="#">评价记录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header   waves-effect waves-teal"><i class="material-icons">group_work</i>警队信息 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">警员查询</a></li>
+                                <li class=""><a href="#">基本信息</a></li>
+                                <li class=""><a href="#">现实情况</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">recent_actors</i>职业规划 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写规划</a></li>
+                                <li class=""><a href="#">规划统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment_ind</i>个人评价 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">填写评价</a></li>
+                                <li class=""><a href="#">评价结果</a></li>
+                                <li class=""><a href="#">模版管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings_input_composite</i>动态警力配置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">单位情况</a></li>
+                                <li class=""><a href="#">算法比率</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">settings</i>系统设置 ></a>
+                        <div class="cat2nd">
+                            <ul>
+                                <li class=""><a href="#">用户权限</a></li>
+                                <li class=""><a href="#">数据字典</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="jycxSearch">
+        <div>
+            <nav class="catNav z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                        <a href="#!" class="breadcrumb">警队信息</a>
+                        <a href="#!" class="breadcrumb">警员查询</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="jycxSearchBox">
+            <ul id="nav-mobile">
+                <li class="search">
+                    <div class="search-wrapper card">
+                        <input id="search">
+                        <i class="material-icons">search</i>
+                        <div class="search-results"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="searchTitle">
+                        包含<b>计算机</b>的搜索结果：
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="collection z-depth-1 tabViewBox">
+                        <div class="col s12 collection-item">
+                            <ul class="tabs">
+                                <li class="tab"><a class="active" href="#tabBox1">全部<span class="numberShow">18</span></a></li>
+                                <li class="tab"><a href="#tabBox2"><i class="material-icons">school</i>学历情况<span class="numberShow">9</span></a></li>
+                                <li class="tab"><a href="#tabBox3"><i class="material-icons">games</i>技能专长<span class="numberShow">3</span></a></li>
+                                <li class="tab"><a href="#tabBox4"><i class="material-icons">recent_actors</i>职业规划 ><span class="numberShow">6</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col s12 collection-item">
+                            <div id="tabBox1" class="col s12 tabViewDetail">
+                                <div class="row jyList">
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">陈永仁</h6></div>
+                                                        <div class="col s6">（警号：247447）</div>
+                                                        <div class="col s12">技能专长：<b>计算机</b></div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        2008-06 公安大学 <b>计算机</b>专业
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">刘建明</h6></div>
+                                                        <div class="col s6">（警号：247896）</div>
+                                                        <div class="col s12">职业规划：科信大队</div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        说明：<b>计算机</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">陈永仁</h6></div>
+                                                        <div class="col s6">（警号：247447）</div>
+                                                        <div class="col s12">技能专长：<b>计算机</b></div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        2008-06 公安大学 <b>计算机</b>专业
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">刘建明</h6></div>
+                                                        <div class="col s6">（警号：247896）</div>
+                                                        <div class="col s12">职业规划：科信大队</div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        说明：<b>计算机</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">陈永仁</h6></div>
+                                                        <div class="col s6">（警号：247447）</div>
+                                                        <div class="col s12">技能专长：<b>计算机</b></div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        2008-06 公安大学 <b>计算机</b>专业
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">刘建明</h6></div>
+                                                        <div class="col s6">（警号：247896）</div>
+                                                        <div class="col s12">职业规划：科信大队</div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        说明：<b>计算机</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">陈永仁</h6></div>
+                                                        <div class="col s6">（警号：247447）</div>
+                                                        <div class="col s12">技能专长：<b>计算机</b></div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        2008-06 公安大学 <b>计算机</b>专业
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">刘建明</h6></div>
+                                                        <div class="col s6">（警号：247896）</div>
+                                                        <div class="col s12">职业规划：科信大队</div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        说明：<b>计算机</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">陈永仁</h6></div>
+                                                        <div class="col s6">（警号：247447）</div>
+                                                        <div class="col s12">技能专长：<b>计算机</b></div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        2008-06 公安大学 <b>计算机</b>专业
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s6">
+                                        <a href="jyda.html" class="card horizontal">
+                                            <div class="card-image">
+                                                <img src="images/photo001.jpg">
+                                            </div>
+                                            <div class="card-stacked">
+                                                <div class="card-content">
+                                                    <div class="row">
+                                                        <div class="col s4"><h6 class="teal-text text-lighten-2">刘建明</h6></div>
+                                                        <div class="col s6">（警号：247896）</div>
+                                                        <div class="col s12">职业规划：科信大队</div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-action row">
+                                                    <div class="col s12">
+                                                        说明：<b>计算机</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col s12 center-align">
+                                        <ul class="pagination">
+                                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                            <li class="active"><a href="#!">1</a></li>
+                                            <li class="waves-effect"><a href="#!">2</a></li>
+                                            <li class="waves-effect"><a href="#!">3</a></li>
+                                            <li class="waves-effect"><a href="#!">4</a></li>
+                                            <li class="waves-effect"><a href="#!">5</a></li>
+                                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabBox2" class="col s12 tabViewDetail">
+                                b
+                            </div>
+                            <div id="tabBox3" class="col s12 tabViewDetail">
+                                c
+                            </div>
+                            <div id="tabBox4" class="col s12 tabViewDetail">
+                                d
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container footTop white-text">平台说明：</div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 常熟市公安局
+                <a class="grey-text text-lighten-4 right" href="#">政工应用小平台</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<div id="modal1" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div>
+                    <div id="gzgw" class="section scrollspy">
+                        <div class="categoryTitle grey lighten-4">岗位履历</div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="z-depth-0">
+                                    <div class="workNow">
+                                        <span class="new badge red" data-badge-caption="社区民警"></span>
+                                        <span class="new badge grey" data-badge-caption="办案民警"></span>
+                                        <span class="new badge grey" data-badge-caption="交通民警"></span>
+                                    </div>
+                                    <div id="test1" class="col s12">
+                                        <div class="workHistory">
+                                            <ul class="workHistory-detail">
+                                                <li>
+                                                    <i class="material-icons teal-text">date_range</i>
+                                                    <label class="teal-text text-lighten-2">2016年6月5日</label>
+                                                    <ul class="collection with-header">
+                                                        <li class="collection-header"><h5>担任办案民警岗位</h5></li>
+                                                        <li class="collection-item grey lighten-4 grey-text  text-darken-2">由社区民警调配到办案民警岗位</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <i class="material-icons teal-text">date_range</i>
+                                                    <label class="teal-text text-lighten-2">2013年4月20日</label>
+                                                    <ul class="collection with-header">
+                                                        <li class="collection-header"><h5>担任社区民警岗位</h5></li>
+                                                        <li class="collection-item grey lighten-4 grey-text  text-darken-2">由方塔派出所调配到琴湖派出所担任社区民警，负责琴湖家园社区</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <i class="material-icons teal-text">date_range</i>
+                                                    <label class="teal-text text-lighten-2">2012年10月15日</label>
+                                                    <ul class="collection with-header">
+                                                        <li class="collection-header"><h5>借调到国宝大队</h5></li>
+                                                        <li class="collection-item grey lighten-4 grey-text  text-darken-2">由方法派出所借调到国宝大队</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <i class="material-icons teal-text">date_range</i>
+                                                    <label class="teal-text text-lighten-2">2011年8月2日</label>
+                                                    <ul class="collection with-header">
+                                                        <li class="collection-header"><h5>担任社区民警岗位</h5></li>
+                                                        <li class="collection-item grey lighten-4 grey-text  text-darken-2">由琴湖派出所调配到方塔派出所担任XX社区民警</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <i class="material-icons teal-text">date_range</i>
+                                                    <label class="teal-text text-lighten-2">2008年2月11日</label>
+                                                    <ul class="collection with-header">
+                                                        <li class="collection-header"><h5>担任社区民警岗位</h5></li>
+                                                        <li class="collection-item grey lighten-4 grey-text  text-darken-2">由琴湖派出所调配到方塔派出所担任XX社区民警</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        专业资质
+    </div>
+</div>
+<div id="modal3" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        表彰奖励
+    </div>
+</div>
+<div id="modal4" class="modal modal-fixed-footer modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        违纪问责
+    </div>
+</div>
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/zgJS.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+    });
+</script>
+</body>
+</html>

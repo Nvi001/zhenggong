@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Starter Template - Materialize</title>
+
+    <!-- CSS  -->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/zg_mian.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body id="indexPage" onload="init();">
+<div class="pageShow">
+    <div class="section indexPage1">
+        <div id="firstLogo" class="logo">
+            <div class="pageTitle_cn">常熟公安</div>
+            <div class="pageTitle_en">CHANGSHU GONGAN</div>
+        </div>
+        <div class="canvasBox">
+            <canvas id="canvas" width="1920" height="800" style=" background:none"></canvas>
+        </div>
+    </div>
+    <div class="section secondPage">
+        <div class="container">
+            <ul id="nav-mobile">
+                <li>
+                    <div class="logo">
+                        <div class="pageTitle_cn">常熟公安</div>
+                        <div class="pageTitle_en">CHANGSHU GONGAN</div>
+                    </div>
+                    <H1 class="white-text center fontLighter">政工应用小平台</H1>
+                </li>
+                <li class="search">
+                    <div class="search-wrapper card">
+                        <input id="search" class="autocomplete2">
+                        <i class="material-icons">search</i>
+                        <div class="search-results"></div>
+                    </div>
+                    <div class="search_advancedBt">
+                        <a class="waves-effect waves-light btn" href="#modalAdvance">高级搜索 ∨</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="row indexBoxSet">
+                <div class="col l1"></div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">volume_up</i></a>
+                            <a href="#modal1" class="btn-floating halfway-fab waves-effect waves-light red">3</a>
+                        </div>
+                        <div class="card-action">
+                            通知消息
+                        </div>
+                    </div>
+                </div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">perm_identity</i></a>
+                        </div>
+                        <div class="card-action">
+                            警员档案
+                        </div>
+                    </div>
+                </div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">group_work</i></a>
+                        </div>
+                        <div class="card-action">
+                            警队信息
+                        </div>
+                    </div>
+                </div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">recent_actors</i></a>
+                        </div>
+                        <div class="card-action">
+                            职业规划
+                        </div>
+                    </div>
+                </div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">pie_chart</i></a>
+                        </div>
+                        <div class="card-action">
+                            规划分析
+                        </div>
+                    </div>
+                </div>
+                <div class="col l1"></div>
+
+            </div>
+            <div class="row indexBoxSet indexBoxSet2">
+                <div class="col l1"></div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">assignment_ind</i></a>
+                        </div>
+                        <div class="card-action">
+                            个人评价
+                        </div>
+                    </div>
+                </div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">assignment</i></a>
+                        </div>
+                        <div class="card-action">
+                            评价分析
+                        </div>
+                    </div>
+                </div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">view_carousel</i></a>
+                        </div>
+                        <div class="card-action">
+                            模板管理
+                        </div>
+                    </div>
+                </div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">settings_input_composite</i></a>
+                        </div>
+                        <div class="card-action">
+                            动态警力配置
+                        </div>
+                    </div>
+                </div>
+                <div class="col l2">
+                    <div class="card indexBoxItem aniSet">
+                        <div class="card-content">
+                            <a href="#"><i class="medium material-icons aniSet">settings</i></a>
+                        </div>
+                        <div class="card-action">
+                            系统设置
+                        </div>
+                    </div>
+                </div>
+                <div class="col l1"></div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+        <h4>新消息</h4>
+        <div class="modal-otherInfo">
+            <a href="#!" class=" waves-effect waves-green btn z-depth-0">更多消息</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+        </div>
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">info_outline</i>
+                <span class="title"><a href="#">最新分派任务</a></span>
+                <p>任务简介任务简介任务简介任务简介任务简介任务简介</p>
+                <a href="#!" class="secondary-content"><i class="material-icons grey-text">keyboard_arrow_right</i></a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">mail_outline</i>
+                <span class="title"><a href="#">最新事件XXXXXXXXXXXXXXXX</a></span>
+                <p>最新事件最新事件最新事件最新事件最新事件最新事件最新事件最新事件最新事件</p>
+                <a href="#!" class="secondary-content"><i class="material-icons grey-text">keyboard_arrow_right</i></a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle green">portrait</i>
+                <span class="title"><a href="#">新人员调动消息</a></span>
+                <p>新人员调动消息新人员调动消息新人员调动消息</p>
+                <a href="#!" class="secondary-content"><i class="material-icons grey-text">keyboard_arrow_right</i></a>
+            </li>
+        </ul>
+    </div>
+    <!--<div class="modal-footer">-->
+        <!--<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">关闭</a>-->
+        <!--<a href="#!" class=" waves-effect waves-green btn-flat">更多消息</a>-->
+    <!--</div>-->
+</div>
+
+<!-- 高级搜索模态框 -->
+<div id="modalAdvance" class="modal modalTabShow">
+    <div class="modal-otherInfo">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-floating z-depth-0"><i class="material-icons">clear</i></a>
+    </div>
+    <div class="modal-content">
+        <h4>高级搜索</h4>
+        <!-- 高级搜索内容 -->
+    </div>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/createjs-2015.11.26.min.js"></script>
+<script src="js/zgJS.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(document).ready(function(){
+        $('input.autocomplete2').autocomplete({
+            data: {
+                "Apple": null,
+                "animate": null,
+                "able": null,
+                "Autumn": null,
+                "中文": null,
+                "中国": null,
+                "Microsoft": null,
+                "Google": 'http://placehold.it/250x250'
+            },
+            limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+            onAutocomplete: function(val) {
+                // Callback function when value is autcompleted.
+            },
+            minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+        });
+
+    });
+</script>
+</body>
+</html>
