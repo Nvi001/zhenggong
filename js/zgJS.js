@@ -29,12 +29,8 @@ function init() {
 $(document).ready(function(){
     //页面最小高度控制
     $(function(){
-        var mainMinHeight = $(document).height() - $("header").height() - $("footer").height() - 40;
+        var mainMinHeight = $(window).height() - $("header").height() - $("footer").height() -20;
         $("main").css("min-height",mainMinHeight);
-    });
-    $(function(){
-        var editNow;
-
     });
     //日期选择器初始化
     $(function(){
